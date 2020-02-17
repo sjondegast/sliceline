@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Banner = ({ children, className }) => (
-	<div className={className}>{children}</div>
+const Banner = ({ children, classNames, backgroundImage }) => (
+	<div style={{ backgroundImage: backgroundImage }} className={classNames}>
+		{children}
+	</div>
 );
 
 export default Banner;

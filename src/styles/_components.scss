@@ -12,7 +12,10 @@
 
 .banner {
     height: 200px;
-    border: 1px solid red;
+    border: 1px solid rgb(76, 0, 255);
+    background-position: center;
+    background-size: cover;
+    background-color: red($color: #000000);
 }
 
 
