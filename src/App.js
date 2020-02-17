@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header/Header';
 // import Navbar from './components/Navbar/Navbar';
 import Link from './components/Link/Link';
+import { Heading, Text } from './components/Typography';
+import Banner from './components/Banner/Banner';
 
 function App() {
 	return (
@@ -14,8 +16,9 @@ function App() {
 					</span>
 				</Link>
 			</Header>
-			<h1>Hello App</h1>
-			<div>Hello SliceLine</div>
+			<Banner className='banner'>test</Banner>
+			<Heading>Hello App</Heading>
+			<Text>Hello SliceLine</Text>
 		</React.Fragment>
 	);
 }
