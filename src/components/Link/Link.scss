@@ -5,17 +5,15 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: green;
     text-decoration: none;
-    background-color: cyan;
 }
 
 /* mouse over link */
 a:hover {
-    background-color: lightgreen;
+    opacity: .8;
 }
 
 /* selected link */
-a:active {
-    background-color: hotpink;
-}
+// a:active {
+//     background-color: hotpink;
+// }

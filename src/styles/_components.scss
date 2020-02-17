@@ -1,7 +1,14 @@
 .navbar,
-.navbar-link {
+.navbar-brand {
     color: white;
     font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 4px rgb(129, 111, 111);
 }
+
+.header {
+    background-color: $color-pizzared;
+    padding: 10px;
+}
+
 
 // TODO: navbar-brand instead of link, also need ABEM naming convention to keep it clean
