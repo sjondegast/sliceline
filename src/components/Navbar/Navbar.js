@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
 
-const Navbar = () => <div className='Navbar'>Hello Navbar</div>;
+const Navbar = ({ children }) => <div className='Navbar'>{children}</div>;
 
 export default Navbar;
