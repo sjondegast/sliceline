@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header';
-// import Navbar from './components/Navbar/Navbar';
 import Link from './components/Link/Link';
 import { Heading, Text } from './components/Typography';
 import Banner from './components/Banner/Banner';
-// import Image from './components/Image/Image';
+import Menu from './components/Menu/';
 
 function App() {
 	return (
@@ -23,6 +22,7 @@ function App() {
 				}
 				classNames='banner'
 			/>
+			<Menu />
 			<Heading>Hello App</Heading>
 			<Text>Hello SliceLine</Text>
 		</React.Fragment>
