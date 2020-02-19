@@ -7,8 +7,6 @@ import Banner from './components/Banner/Banner';
 // import Image from './components/Image/Image';
 
 function App() {
-	const banner_background =
-		'https://images.unsplash.com/photo-1532768778661-1b347c5f02ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80';
 	return (
 		<React.Fragment>
 			<Header className='header'>
@@ -19,7 +17,12 @@ function App() {
 					</span>
 				</Link>
 			</Header>
-			<Banner background={banner_background} classNames='banner' />
+			<Banner
+				background={
+					'https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
+				}
+				classNames='banner'
+			/>
 			<Heading>Hello App</Heading>
 			<Text>Hello SliceLine</Text>
 		</React.Fragment>

@@ -1,22 +1,22 @@
 .navbar,
 .navbar-brand {
-	color: white;
-	font-family: 'Righteous', cursive;
-	text-shadow: 2px 2px 4px rgb(129, 111, 111);
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-shadow: 2px 2px 4px rgb(129, 111, 111);
 }
 
 .header {
-	background-color: $color-pizzared;
-	padding: 10px;
-	z-index: 999;
+    background-color: $color-pizzared;
+    padding: 10px;
 }
 
 .banner {
-	height: 200px;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	filter: contrast(75%);
+    height: 200px;
+    border: 1px solid rgb(76, 0, 255);
+    // background-position: center;
+    background-size: cover;
+    background: cover no-repeat center;
 }
+
 
 // TODO: navbar-brand instead of link, also need ABEM naming convention to keep it clean
