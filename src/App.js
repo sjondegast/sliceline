@@ -23,7 +23,7 @@ function App() {
 				classNames='banner'
 			/>
 			<Menu />
-			<Heading>Hello App</Heading>
+			<Heading title='Hello App'></Heading>
 			<Text>Hello SliceLine</Text>
 		</React.Fragment>
 	);
