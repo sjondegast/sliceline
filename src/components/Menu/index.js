@@ -1,4 +1,5 @@
 import React from 'react';
+import { foods } from '../../data/FoodData';
 import styled from 'styled-components';
 
 const MenuStyled = styled.div`
@@ -7,6 +8,12 @@ const MenuStyled = styled.div`
 	height: 1000px;
 `;
 
-const Menu = () => <MenuStyled />;
+const Menu = () => (
+	<MenuStyled>
+		{foods.map(food => (
+			<div>{food.name}</div>
+		))}
+	</MenuStyled>
+);
 
 export default Menu;
