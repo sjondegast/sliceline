@@ -1,8 +1,9 @@
 import React from 'react';
 import './Navbar.scss';
-import List from '../List/List';
 
-const Navbar = ({ children }) => <List>{children}</List>;
+const Navbar = ({ children, className }) => (
+	<div className={className}>{children}</div>
+);
 
 export default Navbar;
 

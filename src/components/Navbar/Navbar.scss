@@ -1,10 +1,6 @@
-@import '../../styles/base';
-
-.Navbar {
-    background-color: $color-pizzared;
-    padding: 10px;
+.navbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
 }
-
-// div {
-//     background-color: red($color: #000000);
-// }
