@@ -10,3 +10,5 @@ export const Food = styled.div`
 	height: 100px;
 	background-image: ${({ img }) => `url(${img})`};
 `;
+
+// TODO: Remove FoodGrid Styled components file
