@@ -11,10 +11,25 @@
     background-size: cover;
     filter: contrast(75%);
     border-radius: 7px;
-    box-shadow: 0px 0px 10px 0px grey;
+}
+
+// rename these and make it something that i can call from the styles lib
+// TODO: reuse styles that i use or could use more often, don't repeat you're self!
+// Use ABEM Naming convention, especially for these because i can use them globally
+// maybe put these in a utils folder (to start) later if more then a animate folder
+.btn-hover {
+    margin-top: 3px;
+    transition-property: box-shadow margin-top filter;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 2px 0px grey;
+
 
     &:hover {
         cursor: pointer;
-        opacity: 0.7;
+        // opacity: 0.7;
+        filter: contrast(100%);
+        margin-top: 0px;
+        margin-bottom: 3px;
+        box-shadow: 0px 5px 10px 0px grey;
     }
 }

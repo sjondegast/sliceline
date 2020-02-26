@@ -2,7 +2,10 @@ import React from 'react';
 import './Grid.scss';
 
 export const GridItem = ({ children, img }) => (
-	<div style={{ backgroundImage: `url(${img})` }} className='grid-item'>
+	<div
+		style={{ backgroundImage: `url(${img})` }}
+		className='grid-item btn-hover'
+	>
 		{children}
 	</div>
 );

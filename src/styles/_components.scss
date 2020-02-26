@@ -8,6 +8,7 @@
 .navbar {
     background-color: $color-pizzared;
     padding: 10px;
+    z-index: 2;
 }
 
 .banner {
@@ -24,3 +25,4 @@
 
 
 // TODO: navbar-brand instead of link, also need ABEM naming convention to keep it clean
+// TODO: make one file with fonts and make them variables to import and use @global project
