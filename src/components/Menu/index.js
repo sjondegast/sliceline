@@ -11,19 +11,26 @@ const MenuStyled = styled.div`
 	height: 1000px;
 `;
 
-// TODO: Make MenuStyled a Container component
+// TODO: Make MenuStyled a Container component, or Build a Generic container component
+// Container component is used to wrap components, generic css attributes for a container component?
 
 const Menu = () => (
 	<MenuStyled>
-		<Heading title='menu' />
-		<Grid>
-			{foods.map(food => (
-				<GridItem img={food.img}>
-					<Label>{food.name}</Label>
-				</GridItem>
-			))}
-		</Grid>
+		{Object.entries(foods).map(([SectionName, foods]) => (
+			<>
+				<Heading title={SectionName} />
+				<Grid>
+					{foods.map(food => (
+						<GridItem img={food.img}>
+							<Label>{food.name}</Label>
+						</GridItem>
+					))}
+				</Grid>
+			</>
+		))}
 	</MenuStyled>
 );
 
 export default Menu;
+
+// added <> and </> because there should always be one parent component

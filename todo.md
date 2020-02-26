@@ -30,4 +30,4 @@ TODO: Use prop-types for component props
 TODO: setup standard styles for reusable components
 
 TODO: learn array and object.reduce()
-TODO: learn object.entries()
+TODO: learn object.entries() this created an array key and value pairs or array of arrays
