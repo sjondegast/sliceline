@@ -1,13 +1,19 @@
 # TaskList
 
+# Reusable componens
+
 - Make all components reusable, use stateless functional components as much as posible
--
+- just improve components one by one
+- write tests for the components
+- give components default styles
+- use CSS reset library to reset browser standards
 
 ## Reusable Grid
 
 - What is a basic reusable grid?
 - Make FoodGrid just a grid component that i can import.
 - Use Material UI and others to get some inspiration for a reusable Grid component.
+- 2col = 1fr 1fr (what are standard Grids? give those options! )
 
 ## Typography
 
