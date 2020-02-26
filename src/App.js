@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import Link from './components/Link/Link';
-import { Heading, Text } from './components/Typography';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
 
@@ -23,8 +22,6 @@ function App() {
 				classNames='banner'
 			/>
 			<Menu />
-			<Heading title='Hello App'></Heading>
-			<Text>Hello SliceLine</Text>
 		</React.Fragment>
 	);
 }
