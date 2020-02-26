@@ -28,3 +28,6 @@ TODO: make font variables inside project styles folder (global styles)
 TODO: make color variables inside project styles folder
 TODO: Use prop-types for component props
 TODO: setup standard styles for reusable components
+
+TODO: learn array and object.reduce()
+TODO: learn object.entries()

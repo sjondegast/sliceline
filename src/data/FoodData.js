@@ -1,4 +1,4 @@
-export const foods = [
+export const seedData = [
 	{
 		name: 'Cheese Pizza',
 		img: './img/pizza.png',
@@ -40,3 +40,20 @@ export const foods = [
 		section: 'Sandwich'
 	}
 ];
+
+//TODO: add in function toUpperCase for first letter with a helper function in utils folder @ project root or folder inside the component lib?!
+
+export const foods = seedData.reduce((result, food) => {
+	if (!result[food.section]) {
+		result[food.section] = [];
+	}
+	result[food.section].push(food);
+	return result;
+}, {});
+
+// take the seedData Array and turn it into an object.
+// if the result doesn't have a food.section make an empty array
+// push the food into the food.section for the given result (sections)
+// then return the result back from the function
+// TODO: make the function reusable, think of a name that makes sence!
+// TODO: this function should not be in the data seed file, make it a helper function in the utils folder
