@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import Link from './components/Link/Link';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
+import { Modal } from './components/Modal/index';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				classNames='banner'
 			/>
 			<Menu />
+			<Modal />
 		</React.Fragment>
 	);
 }
