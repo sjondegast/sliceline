@@ -35,9 +35,11 @@ class App extends Component {
 					classNames='banner'
 				/>
 				<Menu />
-				<Modal show={this.state.modalToggle}>
-					<div>Hello Modal</div>
-				</Modal>
+				{this.state.modalToggle ? (
+					<Modal show={this.state.modalToggle}>
+						<div>Hello Modal</div>
+					</Modal>
+				) : null}
 			</React.Fragment>
 		);
 	}
