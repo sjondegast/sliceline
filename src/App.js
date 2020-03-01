@@ -23,7 +23,9 @@ function App() {
 				classNames='banner'
 			/>
 			<Menu />
-			<Modal />
+			<Modal show='false'>
+				<div>Hello Modal</div>
+			</Modal>
 		</React.Fragment>
 	);
 }
