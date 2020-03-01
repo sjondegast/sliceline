@@ -6,6 +6,17 @@ import Menu from './components/Menu/';
 import { Modal } from './components/Modal/index';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			modalToggle: false
+		};
+	}
+
+	modalHandler = e => {
+		e.preventDefault(); //i added this to prevent the default behavior
+		this.setState({ modalToggle: true });
+	};
 	render() {
 		return (
 			<React.Fragment>
@@ -24,7 +35,7 @@ class App extends Component {
 					classNames='banner'
 				/>
 				<Menu />
-				<Modal show='false'>
+				<Modal show={this.state.modalToggle}>
 					<div>Hello Modal</div>
 				</Modal>
 			</React.Fragment>
