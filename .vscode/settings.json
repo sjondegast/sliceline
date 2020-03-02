@@ -1,0 +1,35 @@
+    {
+        "workbench.settings.editor": "json",
+        "workbench.colorTheme": "Ayu Dark",
+        "workbench.editor.highlightModifiedTabs": true,
+        "prettier.jsxSingleQuote": true,
+        "prettier.singleQuote": true,
+        "prettier.useTabs": true,
+        "liveServer.settings.CustomBrowser": "chrome",
+        "[javascriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[css]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "bookmarks.saveBookmarksInProject": true,
+        "editor.minimap.enabled": false,
+        "files.autoSave": "afterDelay",
+        "explorer.sortOrder": "type",
+        "editor.cursorBlinking": "smooth",
+        "editor.cursorStyle": "block",
+        "files.trimFinalNewlines": true,
+        "editor.acceptSuggestionOnEnter": "smart",
+        "jshint.enable": false,
+        "workbench.colorCustomizations": {
+
+        },
+    }
