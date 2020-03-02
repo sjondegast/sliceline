@@ -1,7 +1,6 @@
 import React from 'react';
 import { foods } from '../../data/FoodData';
 import styled from 'styled-components';
-// import { Food, FoodGrid } from './FoodGrid';
 import { Grid, GridItem } from '../Grid/index';
 import { Heading } from '../Typography';
 import { Label } from '../Label/index';
@@ -14,22 +13,29 @@ const MenuStyled = styled.div`
 // TODO: Make MenuStyled a Container component, or Build a Generic container component
 // Container component is used to wrap components, generic css attributes for a container component?
 
-const Menu = () => (
-	<MenuStyled>
-		{Object.entries(foods).map(([SectionName, foods]) => (
-			<>
-				<Heading title={SectionName} />
-				<Grid>
-					{foods.map(food => (
-						<GridItem img={food.img}>
-							<Label>{food.name}</Label>
-						</GridItem>
-					))}
-				</Grid>
-			</>
-		))}
-	</MenuStyled>
-);
+const Menu = ({ setOpenFood }) => {
+	return (
+		<MenuStyled>
+			{Object.entries(foods).map(([SectionName, foods]) => (
+				<>
+					<Heading title={SectionName} />
+					<Grid>
+						{foods.map(food => (
+							<GridItem
+								img={food.img}
+								onClick={() => {
+									setOpenFood(food);
+								}}
+							>
+								<Label>{food.name}</Label>
+							</GridItem>
+						))}
+					</Grid>
+				</>
+			))}
+		</MenuStyled>
+	);
+};
 
 export default Menu;
 
