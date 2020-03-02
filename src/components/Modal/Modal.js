@@ -8,7 +8,7 @@ import './Modal.scss';
 export const Modal = props => {
 	return (
 		<>
-			<div className='Modal'>{props.children}</div>
+			<div className='modal'>{props.children}</div>
 			<Backdrop show={props.show} clicked={props.modalClosed} />
 		</>
 	);
