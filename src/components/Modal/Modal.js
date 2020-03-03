@@ -15,3 +15,5 @@ export const Modal = ({ children, handleCloseModal }) => {
 		</>
 	);
 };
+
+// TODO: close btn, z-index more then Modal and will be a icon component / btn #onHover modal show it!

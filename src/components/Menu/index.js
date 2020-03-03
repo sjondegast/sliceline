@@ -21,7 +21,7 @@ const Menu = ({ handleShowModal }) => (
 				<Heading title={SectionName} />
 				<Grid>
 					{foods.map(food => (
-						<GridItem handleShowModal={handleShowModal} content={food}>
+						<GridItem handleEvent={handleShowModal} content={food}>
 							<Label>{food.name}</Label>
 						</GridItem>
 					))}
