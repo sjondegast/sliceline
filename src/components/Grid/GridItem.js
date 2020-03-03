@@ -1,10 +1,13 @@
 import React from 'react';
 import './Grid.scss';
 
-export const GridItem = ({ children, img }) => (
+export const GridItem = ({ children, handleShowModal, content }) => (
 	<div
-		style={{ backgroundImage: `url(${img})` }}
+		style={{ backgroundImage: `url(${content.img})` }}
 		className='grid-item btn-hover'
+		onClick={e => {
+			handleShowModal(content);
+		}}
 	>
 		{children}
 	</div>

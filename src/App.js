@@ -9,14 +9,20 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			modalIsOpen: false
+			modalActive: false,
+			modalContent: undefined
 		};
 	}
 
-	modalHandler = e => {
-		e.preventDefault(); //i added this to prevent the default behavior
-		this.setState({ modalToggle: true });
+	handleShowModal = e => {
+		console.log(e);
+		this.setState(() => ({ modalActive: true, modalContent: e }));
 	};
+
+	handleCloseModal = e => {
+		this.setState({ modalActive: false });
+	};
+
 	render() {
 		return (
 			<React.Fragment>
@@ -34,10 +40,10 @@ class App extends Component {
 					}
 					classNames='banner'
 				/>
-				<Menu />
-				{this.state.modalIsOpen ? (
-					<Modal show={this.state.modalToggle}>
-						<div>Hello Modal</div>
+				<Menu handleShowModal={this.handleShowModal} />
+				{this.state.modalActive ? (
+					<Modal handleCloseModal={this.handleCloseModal}>
+						<div>{this.state.modalContent.name}</div>
 					</Modal>
 				) : null}
 			</React.Fragment>

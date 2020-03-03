@@ -14,14 +14,14 @@ const MenuStyled = styled.div`
 // TODO: Make MenuStyled a Container component, or Build a Generic container component
 // Container component is used to wrap components, generic css attributes for a container component?
 
-const Menu = () => (
+const Menu = props => (
 	<MenuStyled>
 		{Object.entries(foods).map(([SectionName, foods]) => (
 			<>
 				<Heading title={SectionName} />
 				<Grid>
 					{foods.map(food => (
-						<GridItem img={food.img}>
+						<GridItem handleShowModal={props.handleShowModal} content={food}>
 							<Label>{food.name}</Label>
 						</GridItem>
 					))}
