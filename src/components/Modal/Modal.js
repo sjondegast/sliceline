@@ -9,7 +9,7 @@ export const Modal = props => {
 	return (
 		<>
 			<div className='modal'>{props.children}</div>
-			<Backdrop show={props.show} clicked={props.modalClosed} />
+			<Backdrop />
 		</>
 	);
 };

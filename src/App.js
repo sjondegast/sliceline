@@ -9,7 +9,7 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			modalToggle: true
+			modalIsOpen: false
 		};
 	}
 
@@ -35,7 +35,7 @@ class App extends Component {
 					classNames='banner'
 				/>
 				<Menu />
-				{this.state.modalToggle ? (
+				{this.state.modalIsOpen ? (
 					<Modal show={this.state.modalToggle}>
 						<div>Hello Modal</div>
 					</Modal>
