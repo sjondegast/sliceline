@@ -14,13 +14,15 @@ class App extends Component {
 		};
 	}
 
-	handleShowModal = e => {
-		console.log(e);
-		this.setState(() => ({ modalActive: true, modalContent: e }));
+	// refactor code show and close modal to only take the content, if there is any show the modal.
+	// refactor code to use prevState and currentState if they match don't update the state and don't set is directly!
+	handleShowModal = (event, content) => {
+		event.preventDefault();
+		this.setState(() => ({ modalActive: true, modalContent: content }));
 	};
 
 	handleCloseModal = e => {
-		this.setState({ modalActive: false });
+		this.setState(() => ({ modalActive: false, modalContent: undefined }));
 	};
 
 	render() {
@@ -41,7 +43,7 @@ class App extends Component {
 					classNames='banner'
 				/>
 				<Menu handleShowModal={this.handleShowModal} />
-				{this.state.modalActive ? (
+				{this.state.modalContent ? (
 					<Modal handleCloseModal={this.handleCloseModal}>
 						<div>{this.state.modalContent.name}</div>
 					</Modal>

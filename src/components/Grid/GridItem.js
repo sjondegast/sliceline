@@ -5,8 +5,8 @@ export const GridItem = ({ children, handleShowModal, content }) => (
 	<div
 		style={{ backgroundImage: `url(${content.img})` }}
 		className='grid-item btn-hover'
-		onClick={e => {
-			handleShowModal(content);
+		onClick={event => {
+			handleShowModal(event, content);
 		}}
 	>
 		{children}
