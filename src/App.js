@@ -45,6 +45,10 @@ class App extends Component {
 				<Menu handleShowModal={this.handleShowModal} />
 				{this.state.modalContent ? (
 					<Modal handleCloseModal={this.handleCloseModal}>
+						<Banner
+							background={this.state.modalContent.img}
+							classNames='banner'
+						/>
 						<div>{this.state.modalContent.name}</div>
 					</Modal>
 				) : null}
