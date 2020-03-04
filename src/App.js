@@ -4,6 +4,7 @@ import Link from './components/Link/Link';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
 import { Modal } from './components/Modal/index';
+import { Label } from './components/Label';
 
 class App extends Component {
 	constructor(props) {
@@ -48,8 +49,9 @@ class App extends Component {
 						<Banner
 							background={this.state.modalContent.img}
 							classNames='banner'
-						/>
-						<div>{this.state.modalContent.name}</div>
+						>
+							<Label>{this.state.modalContent.name}</Label>
+						</Banner>
 					</Modal>
 				) : null}
 			</React.Fragment>

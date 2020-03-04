@@ -15,6 +15,14 @@
     font-family: 'Righteous', cursive;
 }
 
+.label-modal {
+    font-family: 'Righteous', cursive;
+    top: 4vh;
+    padding: 5px 40px;
+}
+
+// TODO: make ABEM naming for .label-modal-food etc.
+
 
 // TODO: navbar-brand instead of link, also need ABEM naming convention to keep it clean
 // TODO: make one file with fonts and make them variables to import and use @global project
