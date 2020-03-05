@@ -1,8 +1,11 @@
 import React from 'react';
+import classNames from 'classnames';
 import './Label.scss';
 
-export const Label = ({ children, classes }) => {
-	return <div className='label'>{children}</div>;
+export const Label = ({ value, classes }) => {
+	let labelClassNames = classNames('label', classes);
+	console.log(labelClassNames);
+	return <div className='label'>{value}</div>;
 };
 
 // const classNames = classes.map(name) => (classNames + ' ' + name);

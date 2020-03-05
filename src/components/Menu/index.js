@@ -22,7 +22,7 @@ const Menu = ({ handleShowModal }) => (
 				<Grid>
 					{foods.map(food => (
 						<GridItem handleEvent={handleShowModal} content={food}>
-							<Label classNames='label'>{food.name}</Label>
+							<Label classes='a-gridItem__label' value={food.name} />
 						</GridItem>
 					))}
 				</Grid>

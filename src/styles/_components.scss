@@ -1,28 +1,35 @@
 .navbar,
 .navbar-brand {
-    color: white;
-    font-family: 'Righteous', cursive;
-    text-shadow: 2px 2px 4px rgb(129, 111, 111);
+	color: white;
+	font-family: 'Righteous', cursive;
+	text-shadow: 2px 2px 4px rgb(129, 111, 111);
 }
 
 .navbar {
-    background-color: $color-pizzared;
-    padding: 10px;
-    z-index: 2;
+	background-color: $color-pizzared;
+	padding: 10px;
+	z-index: 2;
 }
 
 .grid-item {
-    font-family: 'Righteous', cursive;
+	font-family: 'Righteous', cursive;
 }
 
-.label-modal {
-    font-family: 'Righteous', cursive;
-    top: 4vh;
-    padding: 5px 40px;
+.label {
+	background-color: rgba(255, 255, 255, 0.8);
+	font-family: 'Righteous', cursive;
+}
+
+.a-gridItem__label {
+	font-family: 'Righteous', cursive;
+}
+
+.a-modalBanner__label {
+	top: 4vh;
+	padding: 5px 40px;
 }
 
 // TODO: make ABEM naming for .label-modal-food etc.
-
 
 // TODO: navbar-brand instead of link, also need ABEM naming convention to keep it clean
 // TODO: make one file with fonts and make them variables to import and use @global project

@@ -50,7 +50,10 @@ class App extends Component {
 							background={this.state.modalContent.img}
 							classNames='banner'
 						>
-							<Label>{this.state.modalContent.name}</Label>
+							<Label
+								classes='a-modalBanner__label'
+								value={this.state.modalContent.name}
+							/>
 						</Banner>
 					</Modal>
 				) : null}
