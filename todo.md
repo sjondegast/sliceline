@@ -1,5 +1,9 @@
 # TaskList
 
+- TODO: remove project from icloud, corrupts the node_modules because it syncronisezes the node_modules folder!
+- TODO: label component refactor for input, interaction elements (html5 rules)
+- TODO: change to h1 element, h2 inside the grid-item and h1 inside the banner/modal
+
 # Reusable componens
 
 - Make all components reusable, use stateless functional components as much as posible

@@ -1,6 +1,6 @@
     {
         "workbench.settings.editor": "json",
-        "workbench.colorTheme": "Ayu Dark",
+        "workbench.colorTheme": "Ayu Light",
         "workbench.editor.highlightModifiedTabs": true,
         "prettier.jsxSingleQuote": true,
         "prettier.singleQuote": true,
