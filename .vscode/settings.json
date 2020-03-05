@@ -29,7 +29,4 @@
         "files.trimFinalNewlines": true,
         "editor.acceptSuggestionOnEnter": "smart",
         "jshint.enable": false,
-        "workbench.colorCustomizations": {
-
-        },
     }
