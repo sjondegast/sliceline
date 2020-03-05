@@ -4,8 +4,7 @@ import './Label.scss';
 
 export const Label = ({ value, classes }) => {
 	let labelClassNames = classNames('label', classes);
-	console.log(labelClassNames);
-	return <div className='label'>{value}</div>;
+	return <div className={labelClassNames}>{value}</div>;
 };
 
 // const classNames = classes.map(name) => (classNames + ' ' + name);
