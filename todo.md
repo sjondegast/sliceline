@@ -1,6 +1,7 @@
 # TaskList
 
 - TODO remove project from icloud, corrupts the node_modules because it syncronisezes the node_modules folder!
+- TODO: remove this project on MBP Sjon from icloud > stack/development/projects/<projectName>
 - TODO: label component refactor for input, interaction elements (html5 rules) | label type: btn, banner(or other generic like badge)
 - TODO: change to h1 element, h2 inside the grid-item and h1 inside the banner/modal
 - TODO: styles: css reset > https://github.com/necolas/normalize.css
