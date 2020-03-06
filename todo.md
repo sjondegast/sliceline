@@ -5,7 +5,7 @@
 - TODO: change to h1 element, h2 inside the grid-item and h1 inside the banner/modal
 - TODO: styles: css reset > https://github.com/necolas/normalize.css
 - TODO: ABEM: https://css-tricks.com/abem-useful-adaptation-bem/
-
+- TODO: key props non html5 elements?! #material UI examples
 
 # Reusable componens
 
