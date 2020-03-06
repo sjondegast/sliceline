@@ -1,7 +1,7 @@
 import React from 'react';
 import './Grid.scss';
 
-export const Grid = ({ children, columns, gap }) => (
+export const Grid = ({ children, columns, rows, gap }) => (
 	<div className='grid-container'>{children}</div>
 );
 

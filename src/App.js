@@ -5,12 +5,12 @@ import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
 import { Modal } from './components/Modal/index';
 import { Label } from './components/Label';
+import { Aside } from './components/Aside';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			modalActive: false,
 			modalContent: undefined
 		};
 	}
@@ -43,6 +43,7 @@ class App extends Component {
 					}
 					classNames='banner'
 				/>
+				<Aside />
 				<Menu handleShowModal={this.handleShowModal} />
 				{this.state.modalContent ? (
 					<Modal handleCloseModal={this.handleCloseModal}>
