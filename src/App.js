@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import Link from './components/Link/Link';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
-import { Modal } from './components/Modal/index';
+import { Modal } from './components/Modal';
 import { Label } from './components/Label';
 import { Aside } from './components/Aside';
 
