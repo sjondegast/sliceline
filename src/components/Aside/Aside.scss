@@ -1,13 +1,13 @@
 .aside {
     position: fixed;
-    background-color: rgb(194, 50, 50);
+    background-color: white;
     right: 0px;
-    top: 25vh;
+    top: 46px;
     width: 340px;
-    height: 100%;
-
+    height: calc(100% - 50px);
+    box-shadow: -4px 0px 0px 0px gray;
 }
 
 .test {
-    // background-color: blue;
+    background-color: blue;
 }
