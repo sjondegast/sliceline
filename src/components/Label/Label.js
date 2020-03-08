@@ -2,9 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import './Label.scss';
 
-export const Label = ({ value, classes }) => {
-	let labelClassNames = classNames('label', classes);
-	return <div className={labelClassNames}>{value}</div>;
+export const Label = ({ value, className }) => {
+	let classes = classNames('label', className);
+	return <div className={classes}>{value}</div>;
 };
 
 // const classNames = classes.map(name) => (classNames + ' ' + name);

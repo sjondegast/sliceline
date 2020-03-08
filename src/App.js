@@ -43,7 +43,7 @@ class App extends Component {
 					}
 					classNames='banner'
 				/>
-				<Aside />
+				<Aside className='test' />
 				<Menu handleShowModal={this.handleShowModal} />
 				{this.state.modalContent ? (
 					<Modal handleCloseModal={this.handleCloseModal}>
@@ -52,7 +52,7 @@ class App extends Component {
 							classNames='banner'
 						>
 							<Label
-								classes='a-modalBanner__label'
+								className='a-modalBanner__label'
 								value={this.state.modalContent.name}
 							/>
 						</Banner>
