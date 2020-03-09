@@ -1,11 +1,11 @@
 .aside {
     position: fixed;
-    background-color: white;
     right: 0px;
     top: 46px;
     width: 340px;
     height: calc(100% - 50px);
-    box-shadow: -4px 0px 0px 0px gray;
+    background-color: white;
+    box-shadow: 4px 0px 5px 4px grey;
 }
 
 .test {

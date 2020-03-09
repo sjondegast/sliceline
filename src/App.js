@@ -43,7 +43,7 @@ class App extends Component {
 					}
 					classNames='banner'
 				/>
-				<Aside className='test' />
+				<Aside className='test'>You're order's looking pretty empty.</Aside>
 				<Menu handleShowModal={this.handleShowModal} />
 				{this.state.modalContent ? (
 					<Modal handleCloseModal={this.handleCloseModal}>
