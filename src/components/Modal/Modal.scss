@@ -10,8 +10,8 @@
     transition: all 0.3s ease-out;
     max-height: calc(100% - 10%);
     border: none;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -23,12 +23,15 @@
 
 .modalContent {
     border: 2px solid blue;
+    height: 80%;
+    overflow: auto;
 }
 
-.modalBanner {}
+// .modalBanner {}
 
 .modalFooter {
     border: 2px solid red;
+    height: 10%;
 }
 
 // .modal {
