@@ -7,9 +7,10 @@
     box-shadow: 1px 1px 1px black;
     left: calc(50% - 250px);
     top: 5%;
-    transition: all 0.3s ease-out;
     max-height: calc(100% - 10%);
     border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -17,6 +18,17 @@
         width: 500px;
         left: calc(50% - 250px);
     }
+}
+
+.modalContent {
+    border: 2px solid blue;
+    height: 80%;
+    overflow: auto;
+}
+
+.modalFooter {
+    border: 2px solid red;
+    height: 10%;
 }
 
 // .modal {

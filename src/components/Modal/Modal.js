@@ -5,11 +5,16 @@ import './Modal.scss';
 
 // const Container = () => <div className='modal-container'></div>;
 
-export const Modal = props => {
+export const Modal = ({ children, handleCloseModal }) => {
 	return (
 		<>
-			<div className='modal'>{props.children}</div>
-			<Backdrop show={props.show} clicked={props.modalClosed} />
+			<div className='modal' onClick={handleCloseModal}>
+				{children}
+			</div>
+			<Backdrop />
 		</>
 	);
 };
+
+// TODO: close btn, z-index more then Modal and will be a icon component / btn #onHover modal show it!
+// TODO: props: add icon inside <i className="fas fa-arrow-alt-circle-right">icon</i>
