@@ -1,19 +1,13 @@
-#notes modal
+# notes modal
 
-- position absoluut vs fixed
-- classes: .modal .modal-header .modal-body .modal-footer
-- className: use: ABEM naming conventions
-- all generic styling keep it stupid simple
-- css grid, flexbox > container with grid or flex property
-  <Container flex children >{children}</Container>
+## TODO
 
-- prop: flex or grid -> children > child = item child type=grid or flex.item
+- add close btn to modal header
+- modal header, content, footer
+- modal backdrop set on/off (modal prop: backdrop)
 
-```javascript
-Container = {
-	flex: false, //boolean
-	grid: true, //boolean
-	className: [], //array,
-	children: [] //array
-};
-```
+## Structure
+
+- Modal (type(dialog: boolean(false/true)), children(header, banner, body, footer), ) - props { title, dialog(boolean: true or false )} - ModalHeader - - ModalContent - information - ModalFooter - buttons(actions)
+
+## Rules

@@ -1,14 +1,23 @@
-import React from 'react';
-import Backdrop from '../Backdrop/Backdrop';
-import './Modal.scss';
+import React, { useState } from 'react';
+// import { Backdrop } from '../Backdrop';
+import './Modal.module.scss';
 
-export const Modal = ({ children, handleCloseModal }) => {
+export const Modal = props => {
+	const { children, show } = props;
+
+	const [modal, setModal] = useState(false);
+	const toggle = () => setModal(!modal);
+
+	const setInitialState = show => setModal(!modal);
+	setInitialState();
+
 	return (
 		<>
-			<div className='modal' onClick={handleCloseModal}>
-				{children}
-			</div>
-			<Backdrop />
+			{show ? (
+				<div className='modal' onClick={toggle}>
+					{children}
+				</div>
+			) : null}
 		</>
 	);
 };

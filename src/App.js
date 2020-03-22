@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import Link from './components/Link/Link';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
-import { Modal, ModalBody, ModalFooter } from './components/Modal';
+import { Modal, modalContent, ModalFooter } from './components/Modal';
 import { Label } from './components/Label';
 import { Aside } from './components/Aside';
 
@@ -11,7 +11,9 @@ class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			modalContent: undefined
+			modalContent: {
+				img: null
+			}
 		};
 	}
 
@@ -45,24 +47,21 @@ class App extends Component {
 				/>
 				<Aside className='test'>You're order's looking pretty empty.</Aside>
 				<Menu handleShowModal={this.handleShowModal} />
-				{this.state.modalContent ? (
-					<Modal handleCloseModal={this.handleCloseModal}>
-						<Banner
-							background={this.state.modalContent.img}
-							classNames='banner'
-						>
-							<Label
-								className='a-modalBanner__label'
-								value={this.state.modalContent.name}
-							/>
-						</Banner>
-						<ModalBody />
-						<ModalFooter />
-					</Modal>
-				) : null}
+				<Modal backdrop={true} show={this.state.modalContent}></Modal>
 			</React.Fragment>
 		);
 	}
 }
 
 export default App;
+
+/*
+ {backdrop ? <Backdrop /> : null}
+ 					<Banner background={this.state.modalContent.img} classNames='banner'>
+						<Label
+							className='a-modalBanner__label'
+							value={this.state.modalContent.name}
+						/>
+					</Banner>
+
+*/
