@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import Link from './components/Link/Link';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/';
-import { Modal, ModalContent, ModalFooter } from './components/Modal';
+import { Modal, ModalBody, ModalFooter } from './components/Modal';
 import { Label } from './components/Label';
 import { Aside } from './components/Aside';
 
@@ -56,7 +56,7 @@ class App extends Component {
 								value={this.state.modalContent.name}
 							/>
 						</Banner>
-						<ModalContent />
+						<ModalBody />
 						<ModalFooter />
 					</Modal>
 				) : null}
